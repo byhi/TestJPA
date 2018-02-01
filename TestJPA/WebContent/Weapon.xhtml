@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"> 
+      
+<h:head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Conpatible" content="IE=edge" />
+	<title>KM support</title>
+</h:head> 
+	<h:body style="padding-top: 50px; padding-bottom: 20px;">
+			  <b:container>
+                <h1>Anyagok</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
+                   Use it as a starting point to create something more unique.
+                </p>
+                <p>
+                    <a href="https://github.com/TheCoder4eu/BootsFaces-examples/blob/master/src/main/webapp/jumbotron.xhtml" class="btn btn-lg btn-info">View Page Source »</a>
+                </p>
+            
+              <b:form horizontal="true">
+			      <b:inputText value="Hosszúkard" placeholder="Fegyver neve" fieldSize="sm"  colMd="2"/>
+			     <b:inputText value="15" placeholder="Piaci érték" fieldSize="sm"  colMd="2"/>
+		
+		<!-- Kategória 01-->
+		 <b:selectOneMenu value="Közelharci" colMd="2" required="true" label="Select your car's brand:" labelColMd="2">
+            <f:selectItem itemLabel="(Please select)" itemValue="" />
+            <f:selectItem itemLabel="Közelharci" itemValue="1" />
+            <f:selectItem itemLabel="Távolsági" itemValue="2" />
+        </b:selectOneMenu>
+        
+        <!-- Kategória 02-->
+		 	 <b:selectOneMenu value="Egyszerű" colMd="2" required="true" label="Select your car's brand:" labelColMd="2">
+           <f:selectItem itemLabel="(Please select)" itemValue="" />
+            <f:selectItem itemLabel="Egyszerű" itemValue="1" />
+            <f:selectItem itemLabel="Közepes" itemValue="2" />
+            <f:selectItem itemLabel="Nehéz" itemValue="3" />
+            <f:selectItem itemLabel="Egzotikus" itemValue="4" />
+        </b:selectOneMenu>
+		
+		<!-- Sebzés -->
+		<b:formGroup>
+		 <b:selectOneMenu value="1" colMd="1" required="true" label="Select your car's brand:" labelColMd="2">
+            <f:selectItem itemLabel="(Please select)" itemValue="" />
+            <f:selectItem itemLabel="2" itemValue="1" />
+            <f:selectItem itemLabel="3" itemValue="2" />
+            <f:selectItem itemLabel="4" itemValue="3" />
+        </b:selectOneMenu>
+          <b:selectOneMenu value="d8" colMd="1" required="true">
+            <f:selectItem itemLabel="(Please select)" itemValue="" />
+            <f:selectItem itemLabel="d4" itemValue="1" />
+            <f:selectItem itemLabel="d6" itemValue="2" />
+            <f:selectItem itemLabel="d8" itemValue="3" />
+            <f:selectItem itemLabel="d10" itemValue="4" />
+            <f:selectItem itemLabel="d12" itemValue="5" />
+            <f:selectItem itemLabel="d20" itemValue="6" />
+        </b:selectOneMenu>
+          </b:formGroup>
+        <!-- Kritikus -->
+		 <b:selectOneMenu value="2x" colMd="2" required="true" label="Select your car's brand:" labelColMd="2">
+            <f:selectItem itemLabel="(Please select)" itemValue="" />
+            <f:selectItem itemLabel="2x" itemValue="1" />
+            <f:selectItem itemLabel="3x" itemValue="2" />
+            <f:selectItem itemLabel="4x" itemValue="3" />
+        </b:selectOneMenu>  
+			     <b:inputText value="-" placeholder="Hatótáv" fieldSize="sm" colMd="2"/>
+			     <b:inputText value="4" placeholder="Súly" fieldSize="sm" colMd="2"/>
+			     
+		<!-- Típus -->
+		 <b:selectOneMenu value="Szúró" colMd="2" required="true" label="Select your car's brand:" labelColMd="2">
+            <f:selectItem itemLabel="(Please select)" itemValue="" />
+            <f:selectItem itemLabel="Szúró" itemValue="1" />
+            <f:selectItem itemLabel="Vágó" itemValue="2" />
+            <f:selectItem itemLabel="Zúzó" itemValue="3" />
+        </b:selectOneMenu>
+
+			     
+			  <b:commandButton value="OK" actionListener="#{reg.regg(user.name,user.pass,user.email,user.birthday)}" look="success"/>
+			    
+			</b:form>
+		</b:container>	
+			
+			
+    </h:body>
+</html>

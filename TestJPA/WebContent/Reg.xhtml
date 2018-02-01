@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml"
+		  xmlns:b="http://bootsfaces.net/ui"
+	      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
+	      
+		<h:head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<meta http-equiv="X-UA-Conpatible" content="IE=edge" />
+			<title>KM support</title>
+		</h:head> 
+	<h:body style="padding-top: 50px; padding-bottom: 20px;">
+	
+	<b:jumbotron>
+            <b:container>
+                <h1>Regisztráció</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
+                   Use it as a starting point to create something more unique.
+                </p>
+                <p>
+                    <a href="https://github.com/TheCoder4eu/BootsFaces-examples/blob/master/src/main/webapp/jumbotron.xhtml" class="btn btn-lg btn-info">View Page Source »</a>
+                </p>
+            </b:container>
+
+        </b:jumbotron>
+        <b:container>
+            <b:row>
+            
+             <b:form horizontal="true">
+			     <b:inputText value="#{user.name}" placeholder="Username" fieldSize="sm"/>
+			     <b:inputText value="#{user.pass}" placeholder="Jelszó" fieldSize="sm"/>
+			     <b:inputText value="#{user.pass}" placeholder="Jelszó ismétlés" fieldSize="sm"/>
+			     <b:inputText value="#{user.email}" placeholder="Email" fieldSize="sm"/>
+			     <b:inputText value="#{user.birthday}" placeholder="Születési év yy/mm/dd" fieldSize="sm"/>
+			     
+			     
+			  <b:commandButton value="OK" actionListener="#{reg.regg(user.name,user.pass,user.email,user.birthday)}" look="success"/>
+			    
+			</b:form>
+			
+                
+                
+
+          <b:column col-md="4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                       ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><b:button outcome="" value="View details »"/></p>
+                </b:column>
+                <b:column col-md="4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                       ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><b:button outcome="" value="View details »"/></p>
+                </b:column>
+                <b:column col-md="4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                       ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><b:button outcome="" value="View details »"/></p>
+                </b:column>
+            </b:row>
+            <hr/>
+            <footer>
+            <p>© Company 2014</p>
+            </footer>
+        </b:container>
+	
+	
+    </h:body>
+</html>
